@@ -6,12 +6,10 @@
 
 .list > li {
     border-bottom: 1px solid white;
-    cursor: pointer;
     transition: 200ms ease-in;
-    padding: 0.5rem;
 }
 
 .list > li:hover {
-    transform: translateY(-5px);
+    transform: translateY(-1px);
     border-bottom: none;
 }
