@@ -1,5 +1,6 @@
 import { Outlet } from 'react-router';
 import { Link } from 'react-router';
+import NavBar from './components/NavBar/NavBar';
 import shoppingCartSrc from './assets/shopping_bag.svg';
 
 function App() {
@@ -9,19 +10,7 @@ function App() {
                 <div className="logo">
                     <Link to="/">Zenith</Link>
                 </div>
-                <nav>
-                    <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="shop">Shop</Link>
-                        </li>
-                        <li>
-                            <Link to="about">About</Link>
-                        </li>
-                    </ul>
-                </nav>
+                <NavBar />
                 <div className="cart">
                     <Link to="cart">
                         <img src={shoppingCartSrc} alt="shopping bag icon" />

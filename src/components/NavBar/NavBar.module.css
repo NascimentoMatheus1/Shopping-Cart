@@ -1,0 +1,17 @@
+.list {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+}
+
+.list > li {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+    transition: 200ms ease-in;
+    padding: 0.5rem;
+}
+
+.list > li:hover {
+    transform: translateY(-5px);
+    border-bottom: none;
+}
