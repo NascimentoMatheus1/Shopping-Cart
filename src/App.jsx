@@ -1,21 +1,36 @@
+import { Outlet } from 'react-router';
+import { Link } from 'react-router';
 import shoppingCartSrc from './assets/shopping_bag.svg';
 
 function App() {
     return (
         <>
             <header>
-                <div className="logo">Zenith</div>
+                <div className="logo">
+                    <Link to="/">Zenith</Link>
+                </div>
                 <nav>
                     <ul>
-                        <li>Home</li>
-                        <li>Shop</li>
-                        <li>About</li>
+                        <li>
+                            <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <Link to="shop">Shop</Link>
+                        </li>
+                        <li>
+                            <Link to="about">About</Link>
+                        </li>
                     </ul>
                 </nav>
                 <div className="cart">
-                    <img src={shoppingCartSrc} alt="shopping bag icon" />
+                    <Link to="cart">
+                        <img src={shoppingCartSrc} alt="shopping bag icon" />
+                    </Link>
                 </div>
             </header>
+            <main>
+                <Outlet />
+            </main>
         </>
     );
 }
