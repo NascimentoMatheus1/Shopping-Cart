@@ -1,0 +1,62 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imgSliderImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    flex-shrink: 0;
+    flex-grow: 0;
+    transition: translate 500ms ease-in-out;
+}
+
+.imgSliderButton {
+    all: unset;
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 2rem;
+    transition: background-color 200ms ease-in-out;
+}
+
+.imgSliderButton:hover,
+.imgSliderButton:focus-visible {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.imgSliderDotBtn {
+    all: unset;
+    display: block;
+    cursor: pointer;
+    width: 1rem;
+    height: 1rem;
+    transition: scale 100ms ease-in-out;
+}
+
+.imgSliderDotBtn:hover,
+.imgSliderDotBtn:focus-visible {
+    scale: 1.2;
+}
+
+.imgSliderDotBtn > * {
+    stroke: white;
+    fill: black;
+    height: 100%;
+    width: 100%;
+}
+
+.imgSliderDotBtn:focus-visible,
+.imgSliderButton:focus-visible {
+    outline: auto;
+}
