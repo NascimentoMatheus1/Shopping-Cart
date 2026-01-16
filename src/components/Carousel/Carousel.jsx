@@ -71,6 +71,7 @@ function Carousel({ imagesUrl }) {
             >
                 {imagesUrl.map((_, index) => (
                     <button
+                        key={index}
                         onClick={() => {
                             setImageIndex(index);
                         }}
