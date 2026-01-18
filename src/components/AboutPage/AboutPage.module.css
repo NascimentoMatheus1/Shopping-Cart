@@ -1,0 +1,28 @@
+.aboutPage {
+    height: 100vh;
+    padding: 4rem;
+    color: white;
+    font-size: clamp(1rem, 2vw + 1rem, 1.8rem);
+    text-align: center;
+}
+
+.aboutPage p {
+    margin: 2rem;
+}
+
+.aboutPage a {
+    font-size: inherit;
+    color: inherit;
+}
+
+.aboutPage img {
+    width: 40px;
+    height: 40px;
+}
+
+.githubLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
