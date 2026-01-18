@@ -8,7 +8,7 @@ function ShopPage() {
 
     if (loading)
         return (
-            <div>
+            <div className={styles.shopPage}>
                 <ClipLoader className={styles.loadingIcon} />
             </div>
         );
@@ -16,13 +16,13 @@ function ShopPage() {
     if (error) return <div>{error}</div>;
 
     return (
-        <main>
+        <div className={styles.shopPage}>
             <div className={styles.productsContainer}>
                 {data.map((item) => (
                     <Product {...item} />
                 ))}
             </div>
-        </main>
+        </div>
     );
 }
 

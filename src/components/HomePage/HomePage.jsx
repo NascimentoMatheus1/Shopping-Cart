@@ -27,7 +27,7 @@ function HomePage() {
 
     if (loading)
         return (
-            <div>
+            <div className={styles.homePage}>
                 <ClipLoader className={styles.loadingIcon} />
             </div>
         );

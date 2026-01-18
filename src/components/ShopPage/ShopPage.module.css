@@ -1,3 +1,8 @@
+.shopPage {
+    position: relative;
+    min-height: 100vh;
+}
+
 .loadingIcon {
     position: absolute;
     top: 50%;

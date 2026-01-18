@@ -9,7 +9,7 @@ function Slider({ slides }) {
     return (
         <Swiper
             modules={[Navigation, Pagination]}
-            spaceBetween={20}
+            spaceBetween={0}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
