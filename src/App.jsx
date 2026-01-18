@@ -20,6 +20,14 @@ function App() {
                     </Link>
                 </div>
             </header>
+            <nav className={"categorieNav"}>
+                <ul className={"categorieList"}>
+                    <li>men's clothing</li>
+                    <li>women's clothing</li>
+                    <li>jewelery</li>
+                    <li>eletronics</li>
+                </ul>
+            </nav>
             <main>
                 <Outlet context={{ ...props }} />
             </main>
