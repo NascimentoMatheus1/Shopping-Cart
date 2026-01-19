@@ -1,8 +1,8 @@
 import styles from './product.module.css';
 
-function Product({ id, image, price, title,}) {
+function Product({ image, price, title }) {
     return (
-        <div className={styles.product} key={id}>
+        <div className={styles.product}>
             <div className={styles.productImageContainer}>
                 <img src={image} />
             </div>

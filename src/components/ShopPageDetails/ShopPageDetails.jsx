@@ -21,7 +21,7 @@ function ShopPageDetails() {
         <div className={styles.shopPage}>
             <div className={styles.productsContainer}>
                 {productByCategory.map((item) => (
-                    <Product {...item} />
+                    <Product {...item} key={item.id} />
                 ))}
             </div>
         </div>
