@@ -1,0 +1,19 @@
+.shopPage {
+    position: relative;
+    min-height: 100vh;
+}
+
+.loadingIcon {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.productsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1600px;
+    margin: 0 auto;
+}
