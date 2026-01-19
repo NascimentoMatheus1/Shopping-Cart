@@ -20,12 +20,23 @@ function App() {
                     </Link>
                 </div>
             </header>
-            <nav className={"categorieNav"}>
-                <ul className={"categorieList"}>
-                    <li>men's clothing</li>
-                    <li>women's clothing</li>
-                    <li>jewelery</li>
-                    <li>eletronics</li>
+            <nav className={'categorieNav'}>
+                <ul className={'categorieList'}>
+                    <li>
+                        <Link to="/shop/men's clothing">men's clothing</Link>
+                    </li>
+                    <li>
+                        <Link to="/shop/women's clothing">
+                            women's clothing
+                        </Link>
+                    </li>
+                    <li>
+                        {' '}
+                        <Link to="/shop/jewelery">jewelery</Link>
+                    </li>
+                    <li>
+                        <Link to="/shop/electronics">electronics</Link>
+                    </li>
                 </ul>
             </nav>
             <main>

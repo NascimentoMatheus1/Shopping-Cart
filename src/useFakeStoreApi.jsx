@@ -5,6 +5,10 @@ function useFakeStoreApi() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
+    function getProductByCategory(category) {
+        return data.filter((item) => item.category === category);
+    }
+
     useEffect(() => {
         async function fetchData() {
             try {
@@ -28,6 +32,7 @@ function useFakeStoreApi() {
         data,
         loading,
         error,
+        getProductByCategory,
     };
 }
 

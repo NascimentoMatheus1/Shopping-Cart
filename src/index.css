@@ -41,7 +41,8 @@ header {
     color: white;
 }
 
-header a {
+header a,
+.categorieNav a {
     text-decoration: none;
     color: inherit;
 }
@@ -60,6 +61,10 @@ header > .cart {
     background-color: var(--dark-teal);
 }
 
+.categorieNav .link {
+    margin-bottom: 1rem;
+}
+
 .categorieList {
     display: flex;
     list-style: none;
@@ -67,9 +72,8 @@ header > .cart {
 }
 
 .categorieList > li {
-    padding: 1rem;
     color: white;
-    cursor: pointer;
+    margin: 1rem;
 }
 
 main {

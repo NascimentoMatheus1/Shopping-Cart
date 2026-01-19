@@ -13,7 +13,7 @@ function ShopPage() {
             </div>
         );
 
-    if (error) return <div>{error}</div>;
+    if (error) return <div className={styles.shopPage}> {error}</div>;
 
     return (
         <div className={styles.shopPage}>
