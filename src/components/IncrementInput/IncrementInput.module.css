@@ -1,0 +1,41 @@
+.componentContainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.componentContainer button,
+.componentContainer input {
+    height: 40px;
+}
+
+.componentContainer button {
+    width: 40px;
+    background-color: none;
+    border: 0.5px solid rgba(0, 0, 0, 0.599);
+    font-size: inherit;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.numberInput {
+    max-width: 70px;
+    font-size: inherit;
+    text-align: center;
+}
+
+.subButton {
+    background-color: #acacac;
+}
+
+.addButton {
+    background-color: #0a9fdd;
+}
+
+
+@media screen and (min-width: 620px) {
+    .componentContainer{
+        justify-content: flex-start;
+    }
+}
