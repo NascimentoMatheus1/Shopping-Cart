@@ -1,4 +1,4 @@
-import { useOutletContext } from 'react-router';
+import { useOutletContext, Link } from 'react-router';
 import { ClipLoader } from 'react-spinners';
 
 import Slider from '../Slider/Slidex';
@@ -36,6 +36,25 @@ function HomePage() {
 
     return (
         <div className={styles.homePage}>
+            <nav className={styles.categorieNav}>
+                <ul className={styles.categorieList}>
+                    <li>
+                        <Link to="/shop/men's clothing">men's clothing</Link>
+                    </li>
+                    <li>
+                        <Link to="/shop/women's clothing">
+                            women's clothing
+                        </Link>
+                    </li>
+                    <li>
+                        {' '}
+                        <Link to="/shop/jewelery">jewelery</Link>
+                    </li>
+                    <li>
+                        <Link to="/shop/electronics">electronics</Link>
+                    </li>
+                </ul>
+            </nav>
             <div
                 style={{
                     width: '100%',

@@ -47,3 +47,25 @@
     display: block;
     flex-grow: 1;
 }
+
+.categorieNav {
+    background-color: var(--lobster-pink);
+    width: 100%;
+}
+.categorieNav .link {
+    margin-bottom: 1rem;
+}
+.categorieNav a {
+    text-decoration: none;
+    color: inherit;
+}
+.categorieList {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.categorieList > li {
+    color: white;
+    margin: 1rem;
+}
