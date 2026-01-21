@@ -4,7 +4,8 @@ import { useOutletContext } from 'react-router';
 import styles from './ShopPage.module.css';
 
 function ShopPage() {
-    const { data, loading, error } = useOutletContext();
+    const { data, loading, error, addItemToCart, removeItemFromCart } =
+        useOutletContext();
 
     if (loading)
         return (
@@ -14,12 +15,16 @@ function ShopPage() {
         );
 
     if (error) return <div className={styles.shopPage}> {error}</div>;
-
     return (
         <div className={styles.shopPage}>
             <div className={styles.productsContainer}>
                 {data.map((item) => (
-                    <Product {...item} key={item.id} />
+                    <Product
+                        {...item}
+                        key={item.id}
+                        addItemToCart={addItemToCart}
+                        removeItemFromCart={removeItemFromCart}
+                    />
                 ))}
             </div>
         </div>

@@ -42,8 +42,8 @@
     font-weight: 700;
 }
 
-.productInfo .addToCart {
-    background: #3498db;
+.addToCart,
+.removeFromCart {
     color: white;
     border: none;
     padding: 8px;
@@ -53,6 +53,16 @@
     transition: background 0.2s;
 }
 
+.addToCart {
+    background: #3498db;
+}
 .addToCart:hover {
     background: #2980b9;
+}
+
+.removeFromCart {
+    background-color: hsl(0, 81%, 57%);
+}
+.removeFromCart:hover {
+    background-color: hsl(0, 81%, 47%);
 }
