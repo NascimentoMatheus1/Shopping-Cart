@@ -4,7 +4,14 @@ import { useOutletContext, useParams } from 'react-router';
 import styles from './ShopPageDetails.module.css';
 
 function ShopPageDetails() {
-    const { data, loading, error, getProductByCategory } = useOutletContext();
+    const {
+        data,
+        loading,
+        error,
+        getProductByCategory,
+        addItemToCart,
+        removeItemFromCart,
+    } = useOutletContext();
     let { category } = useParams();
     const productByCategory = getProductByCategory(category);
 
@@ -21,7 +28,12 @@ function ShopPageDetails() {
         <div className={styles.shopPage}>
             <div className={styles.productsContainer}>
                 {productByCategory.map((item) => (
-                    <Product {...item} key={item.id} />
+                    <Product
+                        {...item}
+                        addItemToCart={addItemToCart}
+                        removeItemFromCart={removeItemFromCart}
+                        key={item.id}
+                    />
                 ))}
             </div>
         </div>

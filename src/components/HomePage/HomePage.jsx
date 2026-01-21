@@ -15,13 +15,25 @@ import addImage2 from '../../assets/sale-ad-image2.jpg';
 import styles from './HomePage.module.css';
 
 function HomePage() {
-    const { data, loading, error } = useOutletContext();
+    const {
+        data,
+        loading,
+        error,
+        addItemToCart,
+        removeItemFromCart,
+    } = useOutletContext();
 
     const bannerImages = [banner1, banner2, banner3, banner4];
 
     const trendingProducts = data
         .slice(0, 10)
-        .map((item) => <Product {...item} />);
+        .map((item) => (
+            <Product
+                {...item}
+                addItemToCart={addItemToCart}
+                removeItemFromCart={removeItemFromCart}
+            />
+        ));
 
     const bestDeals = data.slice(10).map((item) => <Product {...item} />);
 
