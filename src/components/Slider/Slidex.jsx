@@ -14,12 +14,10 @@ function Slider({ slides }) {
             navigation
             pagination={{ clickable: true }}
             breakpoints={{
-                // when window width is >= 640px
                 700: {
                     slidesPerView: 2,
                     spaceBetween: 20,
                 },
-                // when window width is >= 1024px
                 1050: {
                     slidesPerView: 3,
                     spaceBetween: 50,

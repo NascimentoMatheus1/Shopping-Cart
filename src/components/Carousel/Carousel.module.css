@@ -8,10 +8,8 @@
 
 .imgSliderImg {
     width: 100%;
-    max-height: 300px;
     height: auto;
     object-fit: cover;
-    object-position: center;
     display: block;
     flex-shrink: 0;
     flex-grow: 0;

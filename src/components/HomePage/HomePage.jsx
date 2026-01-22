@@ -1,5 +1,6 @@
 import { useOutletContext } from 'react-router';
 import { ClipLoader } from 'react-spinners';
+import useScreenSize from '../../useScreenSize';
 
 import CategorieNav from '../CategorieNav/CategorieNav';
 import Slider from '../Slider/Slidex';
@@ -12,6 +13,9 @@ import banner3 from '../../assets/mega-sale-banner3.png';
 import banner4 from '../../assets/mega-sale-banner4.png';
 import addImage1 from '../../assets/sale-ad-image1.jpg';
 import addImage2 from '../../assets/sale-ad-image2.jpg';
+import mobileBanner1 from '../../assets/banner-mobile1.jpg';
+import mobileBanner2 from '../../assets/banner-mobile2.jpg';
+import mobileBanner3 from '../../assets/banner-mobile3.jpg';
 
 import styles from './HomePage.module.css';
 
@@ -19,7 +23,11 @@ function HomePage() {
     const { data, loading, error, addItemToCart, removeItemFromCart } =
         useOutletContext();
 
-    const bannerImages = [banner1, banner2, banner3, banner4];
+    const screenSize = useScreenSize();
+    const bannerImages =
+        screenSize.width > 500
+            ? [banner1, banner2, banner3, banner4]
+            : [mobileBanner1, mobileBanner2, mobileBanner3];
 
     const trendingProducts = data
         .slice(0, 10)
@@ -61,8 +69,8 @@ function HomePage() {
             </div>
 
             <div className={styles.addContainer}>
-                <img src={addImage1} alt="" className={styles.addImage} />
-                <img src={addImage2} alt="" />
+                <img src={addImage1} className={styles.addImage} />
+                <img src={addImage2} className={styles.addImage} />
             </div>
 
             <div className={styles.sliderContainer}>
