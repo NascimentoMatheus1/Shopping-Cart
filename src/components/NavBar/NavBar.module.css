@@ -1,3 +1,7 @@
+.componentContainer {
+    display: none;
+}
+
 .list {
     list-style: none;
     display: flex;
@@ -12,4 +16,10 @@
 .list > li:hover {
     transform: translateY(-1px);
     border-bottom: none;
+}
+
+@media screen and (min-width: 500px) {
+    .componentContainer {
+        display: block;
+    }
 }
