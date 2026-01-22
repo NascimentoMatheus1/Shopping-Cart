@@ -51,6 +51,7 @@
 .categorieNav {
     background-color: var(--lobster-pink);
     width: 100%;
+    display: none;
 }
 .categorieNav .link {
     margin-bottom: 1rem;
@@ -68,4 +69,10 @@
 .categorieList > li {
     color: white;
     margin: 1rem;
+}
+
+@media screen and (min-width: 420px) {
+    .categorieNav {
+        display: block;
+    }
 }
