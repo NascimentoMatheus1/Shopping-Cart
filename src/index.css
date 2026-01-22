@@ -10,7 +10,6 @@
     --deep-space-blue: hsla(207, 43%, 16%, 1);
     --dark-teal: hsla(183, 100%, 14%, 1);
     --ivory: hsla(73, 53%, 97%, 1);
-    --dusty-mauve: hsla(343, 13%, 56%, 1);
     --lobster-pink: hsla(1, 73%, 63%, 1);
 }
 
@@ -41,8 +40,7 @@ header {
     color: white;
 }
 
-header a,
-.categorieNav a {
+header a {
     text-decoration: none;
     color: inherit;
 }
@@ -56,24 +54,14 @@ header > .cart {
     padding: 10px;
     cursor: pointer;
 }
-
-.categorieNav {
-    background-color: var(--dark-teal);
+.cart-icon-container {
+    position: relative;
 }
-
-.categorieNav .link {
-    margin-bottom: 1rem;
-}
-
-.categorieList {
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-}
-
-.categorieList > li {
-    color: white;
-    margin: 1rem;
+header .items-on-cart {
+    position: absolute;
+    top: 1px;
+    right: -5px;
+    font-size: 18px;
 }
 
 main {
