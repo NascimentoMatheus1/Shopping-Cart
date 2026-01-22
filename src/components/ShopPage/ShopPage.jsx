@@ -2,6 +2,7 @@ import Product from '../Product/Product';
 import { ClipLoader } from 'react-spinners';
 import { useOutletContext } from 'react-router';
 import styles from './ShopPage.module.css';
+import CategorieNav from '../CategorieNav/CategorieNav';
 
 function ShopPage() {
     const { data, loading, error, addItemToCart, removeItemFromCart } =
@@ -17,6 +18,7 @@ function ShopPage() {
     if (error) return <div className={styles.shopPage}> {error}</div>;
     return (
         <div className={styles.shopPage}>
+            <CategorieNav />
             <div className={styles.productsContainer}>
                 {data.map((item) => (
                     <Product

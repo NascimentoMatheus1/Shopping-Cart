@@ -1,6 +1,7 @@
-import { useOutletContext, Link } from 'react-router';
+import { useOutletContext } from 'react-router';
 import { ClipLoader } from 'react-spinners';
 
+import CategorieNav from '../CategorieNav/CategorieNav';
 import Slider from '../Slider/Slidex';
 import Carousel from '../Carousel/Carousel';
 import Product from '../Product/Product';
@@ -15,13 +16,8 @@ import addImage2 from '../../assets/sale-ad-image2.jpg';
 import styles from './HomePage.module.css';
 
 function HomePage() {
-    const {
-        data,
-        loading,
-        error,
-        addItemToCart,
-        removeItemFromCart,
-    } = useOutletContext();
+    const { data, loading, error, addItemToCart, removeItemFromCart } =
+        useOutletContext();
 
     const bannerImages = [banner1, banner2, banner3, banner4];
 
@@ -48,25 +44,7 @@ function HomePage() {
 
     return (
         <div className={styles.homePage}>
-            <nav className={styles.categorieNav}>
-                <ul className={styles.categorieList}>
-                    <li>
-                        <Link to="/shop/men's clothing">men's clothing</Link>
-                    </li>
-                    <li>
-                        <Link to="/shop/women's clothing">
-                            women's clothing
-                        </Link>
-                    </li>
-                    <li>
-                        {' '}
-                        <Link to="/shop/jewelery">jewelery</Link>
-                    </li>
-                    <li>
-                        <Link to="/shop/electronics">electronics</Link>
-                    </li>
-                </ul>
-            </nav>
+            <CategorieNav />
             <div
                 style={{
                     width: '100%',
