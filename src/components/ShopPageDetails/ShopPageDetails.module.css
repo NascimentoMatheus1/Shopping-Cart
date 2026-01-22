@@ -17,3 +17,10 @@
     max-width: 1600px;
     margin: 0 auto;
 }
+
+.categoryTitle {
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}

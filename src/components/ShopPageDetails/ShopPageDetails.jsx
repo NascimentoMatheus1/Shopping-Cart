@@ -5,7 +5,6 @@ import styles from './ShopPageDetails.module.css';
 
 function ShopPageDetails() {
     const {
-        data,
         loading,
         error,
         getProductByCategory,
@@ -26,6 +25,10 @@ function ShopPageDetails() {
 
     return (
         <div className={styles.shopPage}>
+            <div className={styles.categoryTitle}>
+                <h1>{category}</h1>
+            </div>
+
             <div className={styles.productsContainer}>
                 {productByCategory.map((item) => (
                     <Product
