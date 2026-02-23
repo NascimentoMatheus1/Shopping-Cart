@@ -22,7 +22,7 @@ Este projeto é um simulador de e-commerce completo, focado no gerenciamento de 
 - **Carrinho em Tempo Real:** O ícone na barra de navegação reflete a quantidade total de itens instantaneamente.
 - **Gerenciamento de Pedidos:** Página do carrinho para revisar, alterar quantidades ou remover produtos antes de uma "finalização" simulada.
 
-### 🧠 Conceitos Aplicados (Conexão UFBA)
+### 🧠 Conceitos Aplicados
 - **SPA Architecture:** Configuração de redirecionamentos (Netlify/Vercel) para garantir que as rotas funcionem corretamente em produção.
 - **Sincronização de Estado:** Desafio de manter o estado do carrinho consistente entre diferentes páginas da aplicação.
 
@@ -47,6 +47,5 @@ This project is a complete e-commerce simulator focused on route management and 
 - **Order Management:** Dedicated cart page to review, modify quantities, or remove items.
 
 ### 🧠 Key Concepts Applied
-Reflecting my academic background at **UFBA**, I focused on:
 - **SPA Architecture:** Configuring server-side redirects (Netlify/Vercel) to handle client-side routing in a production environment.
 - **State Synchronization:** The challenge of maintaining a single source of truth for the cart state across multiple decoupled components.
